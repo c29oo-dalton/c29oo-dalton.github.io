@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		
+		#cutegif{
+			/*background-color: rgb(102, 0, 51);*/
+			width: 600px;
+			height: 600px;
+			background-image: url(https://media1.giphy.com/media/sIO6LNmX9hj2xCSYvD/source.gif);
+			background-position: center;
+			background-size:contain;
+			background-repeat: no-repeat;
+			position: absolute;
+		}
+
+
+	</style>
+</head>
+<body>
+
+<div id="cutegif">
+</div>
+
+
+<script type="text/javascript">
+
+	//STEPS:
+	//document.addEventListener()
+
+	//document.addEventListner("keypress", function(){})
+
+cutegif.style.left="0px"
+document.addEventListener("keypress", function(){
+
+	cutegif.style.left = parseInt(cutegif.style.left)+7+"px"
+	console.log("hey guys im tyler!")
+
+
+})
+	
+
+</script>
+
+</body>
+</html>
