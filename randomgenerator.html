@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/style">
+
+#What should we cook tonight??{
+	fontsize: 50px
+}
+
+fontsi
+
+</style>
+
+
+</head>
+<body>
+
+	<center>
+		
+		<div id="title">What should we cook tonight??</div>
+
+	</center>
+
+	<script type="text/javascript">
+		
+		let recipes = ["Creamy Garlic Salmon Pasta", "Shrimp Stir-Fry", "Tomato Basil Shrimp Linguine", "Jollof Rice with Grilled Fish", "Spicy Vodka Sauce with Shrimp", "Puttanesca with Anchovies", "Garlic Ginger Shrimp Stir-Fry", "Garlic Shrimp & Potatoes (One Pan)", "Fish Tacos", "Lentil & Vegetable Shepherd’s Pie","Baked Eggplant with Tomato & Garlic"]
+
+
+		document.addEventListener("click", function(){
+			let random = Math.round(Math.random()*11)
+			console.log(random)
+
+			alert(recipes[random])
+		})
+
+	</script>
+
+</body>
+</html>
