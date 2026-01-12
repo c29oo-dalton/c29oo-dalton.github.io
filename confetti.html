@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<style type="text/css">
+
+		.box{
+			width: 10px;
+			height:10px;
+			border: 1px solid black;
+			display: inline-blockl;
+			position: absolute;
+/*			background-color: rgb(234, 53, 23)
+
+*/	</style>
+		
+
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		function makeConfetti (){
+			let square =  document.createElement("div")
+			square.classList.add("box")
+			document.body.appendChild(square)
+
+			let r = Math.round(Math.random()*255)
+			let g= Math.round(Math.random()*255)
+			let b = Math.round(Math.random()*255)
+
+			square.style.top=Math.random()*1000+"px"
+			square.style.left=Math.random()*2000+"px"
+
+			square.style.backgroundColor = "rgb("+r+","+g+","+b+")"
+		}
+
+		setInterval(makeConfetti, 200)
+
+	</script>
+
+</body>
+</html>
