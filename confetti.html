@@ -3,11 +3,13 @@
 <head>
 	
 	<style type="text/css">
-
+		body {
+			background-color: black;
+		}
 		.box{
 			width: 10px;
 			height:10px;
-			border: 1px solid black;
+			border: 0.5px solid white;
 			display: inline-blockl;
 			position: absolute;
 /*			background-color: rgb(234, 53, 23)
@@ -26,16 +28,27 @@
 			document.body.appendChild(square)
 
 			let r = Math.round(Math.random()*255)
-			let g= Math.round(Math.random()*255)
+			let g= Math.round(Math.random()*0)
 			let b = Math.round(Math.random()*255)
 
 			square.style.top=Math.random()*1000+"px"
 			square.style.left=Math.random()*2000+"px"
 
 			square.style.backgroundColor = "rgb("+r+","+g+","+b+")"
+			function fall() {
+				let fallFactor = 10
+				square.style.top = parseInt(square.style.top) + fallFactor + "px"
+
+				if(parseInt(sqaure.style.top)>1000) {
+					square.style.top = "-100px"
+					/*Math.random() * 150 +"px"*/
+				}
+
+			}
+			setInterval(fall, 10)
 		}
 
-		setInterval(makeConfetti, 200)
+		setInterval(makeConfetti, 50)
 
 	</script>
 
